@@ -325,7 +325,7 @@ let tour = (heros, boss) => {
     }
 }
 
-while (boss.pv > 0 || heros.length == 0) {
+while (boss.pv > 0 && heros.length > 0) {
     tour(heros, boss);  
 }
 
